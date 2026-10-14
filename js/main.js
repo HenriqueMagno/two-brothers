@@ -17,6 +17,36 @@
     toggle.addEventListener("click", () => setMenu(!nav.classList.contains("is-open")));
     nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
 
+    // Rolagem para âncoras: corrige o destino se a página crescer durante o
+    // scroll (imagens lazy da galeria carregam no caminho e empurram o conteúdo)
+    let stopFollow = null;
+    document.addEventListener("click", (e) => {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+        const target = document.querySelector(link.getAttribute("href"));
+        if (!target) return;
+        e.preventDefault();
+        history.pushState(null, "", link.getAttribute("href"));
+
+        if (stopFollow) stopFollow();
+        const scrollTo = () => target.scrollIntoView({ behavior: "smooth", block: "start" });
+        scrollTo();
+
+        const ro = new ResizeObserver(scrollTo);
+        ro.observe(document.body);
+        const cancel = () => stopFollow && stopFollow();
+        const timer = setTimeout(cancel, 2500);
+        window.addEventListener("wheel", cancel, { passive: true, once: true });
+        window.addEventListener("touchstart", cancel, { passive: true, once: true });
+        stopFollow = () => {
+            ro.disconnect();
+            clearTimeout(timer);
+            window.removeEventListener("wheel", cancel);
+            window.removeEventListener("touchstart", cancel);
+            stopFollow = null;
+        };
+    });
+
     // Animação de entrada
     const revealEls = document.querySelectorAll(".reveal");
     if ("IntersectionObserver" in window) {
