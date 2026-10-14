@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Brothers | Barbearia Premium</title>
+    <meta name="description"
+        content="Barbearia Two Brothers — cortes, barba e planos de assinatura mensal. Agende seu horário.">
+    <link rel="icon" href="assets/logo-two.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#inicio" class="brand" aria-label="Two Brothers - início">
+                <img src="assets/logo-two.jpg" alt="Logo Two Brothers" class="brand__logo">
+                <span class="brand__name">Two Brothers</span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Navegação principal">
+                <a href="#servicos">Serviços</a>
+                <a href="#planos">Planos</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#agendar" class="btn btn--gold btn--sm">Agende seu horário</a>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="inicio">
+            <div class="hero__bg" aria-hidden="true"></div>
+            <div class="container hero__inner">
+                <div class="hero__content reveal">
+                    <span class="eyebrow">Barbearia premium · Desde 2019</span>
+                    <h1 class="hero__title">Estilo é<br><span class="gold">compromisso.</span></h1>
+                    <p class="hero__text">
+                        Corte, barba e cuidado de verdade — com a praticidade de um plano mensal.
+                        Assine, agende quando quiser e saia sempre alinhado.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#agendar" class="btn btn--gold">Agende seu horário</a>
+                        <a href="#planos" class="btn btn--outline">Conheça os planos</a>
+                    </div>
+                    <ul class="hero__stats">
+                        <li><strong>+6</strong><span>anos de casa</span></li>
+                        <li><strong>+800</strong><span>assinantes</span></li>
+                        <li><strong>4.9★</strong><span>no Google</span></li>
+                    </ul>
+                </div>
+                <div class="hero__logo reveal">
+                    <div class="logo-ring">
+                        <img src="assets/logo-two.jpg" alt="Barbearia Two Brothers - Since 2019">
+                    </div>
+                </div>
+            </div>
+            <a href="#servicos" class="scroll-hint" aria-label="Rolar para serviços"><span></span></a>
+        </section>
+
+        <!-- ===== SERVIÇOS ===== -->
+        <section class="section" id="servicos">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">O que fazemos</span>
+                    <h2 class="section__title">Serviços</h2>
+                    <div class="divider"><span></span></div>
+                </header>
+
+                <div class="services">
+                    <article class="service-card reveal">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="36" r="5" />
+                                <circle cx="12" cy="12" r="5" />
+                                <path d="M16 15l26 21M16 33l26-21" />
+                            </svg>
+                        </div>
+                        <h3>Corte</h3>
+                        <p>Clássico, degradê, social ou tesoura. Finalização com produto premium.</p>
+                        <div class="service-card__price"><small>R$</small>50</div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 10h26l6 6v4H6z" />
+                                <path d="M38 16l4 2" />
+                                <path d="M10 20v18M16 20v18M22 20v18M28 20v18" />
+                            </svg>
+                        </div>
+                        <h3>Barba</h3>
+                        <p>Toalha quente, navalha, desenho e hidratação com óleos.</p>
+                        <div class="service-card__price"><small>R$</small>40</div>
+                    </article>
+
+                    <article class="service-card service-card--featured reveal">
+                        <span class="tag">Mais pedido</span>
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M24 6c-8 0-14 6-14 14v4c0 2 1 4 3 5l1 9c1 3 4 5 10 5s9-2 10-5l1-9c2-1 3-3 3-5v-4c0-8-6-14-14-14z" />
+                                <path d="M17 30c2 2 4 3 7 3s5-1 7-3" />
+                                <path d="M14 18c4-2 16-2 20 0" />
+                            </svg>
+                        </div>
+                        <h3>Combo</h3>
+                        <p>Corte + barba completo. A experiência Two Brothers do início ao fim.</p>
+                        <div class="service-card__price"><small>R$</small>80</div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M30 6l12 12-20 20H10V26z" />
+                                <path d="M26 10l12 12" />
+                                <path d="M6 42h16" />
+                            </svg>
+                        </div>
+                        <h3>Pigmentação</h3>
+                        <p>Corrige falhas na barba e no cabelo com acabamento natural.</p>
+                        <div class="service-card__price"><small>R$</small>35</div>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-card__icon">
+                            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 22c6-6 14-8 20-6" />
+                                <path d="M44 22c-6-6-14-8-20-6" />
+                                <path d="M10 30c4 3 9 4 14 4s10-1 14-4" />
+                                <circle cx="24" cy="30" r="4" />
+                            </svg>
+                        </div>
+                        <h3>Sobrancelha</h3>
+                        <p>Limpeza e alinhamento na navalha ou pinça, sem perder a naturalidade.</p>
+                        <div class="service-card__price"><small>R$</small>20</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PLANOS ===== -->
+        <section class="section section--alt" id="planos">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">Clube de assinatura</span>
+                    <h2 class="section__title">Planos mensais</h2>
+                    <div class="divider"><span></span></div>
+                    <p class="section__sub">Pague uma vez por mês e venha quantas vezes o plano permitir. Sem fila, sem
+                        surpresa.</p>
+                </header>
+
+                <div class="plans">
+                    <article class="plan reveal">
+                        <h3 class="plan__name">Essencial</h3>
+                        <p class="plan__desc">Para quem mantém o corte sempre em dia.</p>
+                        <div class="plan__price"><small>R$</small>89<span>/mês</span></div>
+                        <ul class="plan__list">
+                            <li>Cortes ilimitados</li>
+                            <li>Agendamento prioritário</li>
+                            <li>Bebida cortesia</li>
+                            <li class="off">Barba</li>
+                            <li class="off">Sobrancelha</li>
+                        </ul>
+                        <a href="#agendar" class="btn btn--outline btn--block">Assinar Essencial</a>
+                    </article>
+
+                    <article class="plan plan--featured reveal">
+                        <span class="plan__badge">Mais popular</span>
+                        <h3 class="plan__name">Premium</h3>
+                        <p class="plan__desc">Cabelo e barba sempre alinhados.</p>
+                        <div class="plan__price"><small>R$</small>149<span>/mês</span></div>
+                        <ul class="plan__list">
+                            <li>Cortes ilimitados</li>
+                            <li>Barbas ilimitadas</li>
+                            <li>Sobrancelha inclusa</li>
+                            <li>Agendamento prioritário</li>
+                            <li>10% off em produtos</li>
+                        </ul>
+                        <a href="#agendar" class="btn btn--gold btn--block">Assinar Premium</a>
+                    </article>
+
+                    <article class="plan reveal">
+                        <h3 class="plan__name">Black</h3>
+                        <p class="plan__desc">A experiência completa, sem limites.</p>
+                        <div class="plan__price"><small>R$</small>219<span>/mês</span></div>
+                        <ul class="plan__list">
+                            <li>Tudo do Premium</li>
+                            <li>1 pigmentação por mês</li>
+                            <li>Hidratação capilar</li>
+                            <li>Horário exclusivo</li>
+                            <li>20% off em produtos</li>
+                        </ul>
+                        <a href="#agendar" class="btn btn--outline btn--block">Assinar Black</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EQUIPE ===== -->
+        <section class="section" id="equipe">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">Quem faz acontecer</span>
+                    <h2 class="section__title">Nossa equipe</h2>
+                    <div class="divider"><span></span></div>
+                </header>
+
+                <div class="team">
+                    <article class="barber reveal">
+                        <div class="barber__photo">
+                            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=700&q=80&auto=format&fit=crop"
+                                alt="Barbeiro Rafael" loading="lazy">
+                        </div>
+                        <div class="barber__info">
+                            <h3>Arthur</h3>
+                            <p>Degradê & Navalhado</p>
+                            <a href="https://instagram.com/" target="_blank" rel="noopener" class="barber__ig"
+                                aria-label="Instagram do Rafael">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                                </svg>
+                                @arthur.twobrothers
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="barber reveal">
+                        <div class="barber__photo">
+                            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=700&q=80&auto=format&fit=crop"
+                                alt="Barbeiro Lucas" loading="lazy">
+                        </div>
+                        <div class="barber__info">
+                            <h3>Juan</h3>
+                            <p>Barba & Visagismo</p>
+                            <a href="https://instagram.com/" target="_blank" rel="noopener" class="barber__ig"
+                                aria-label="Instagram do Lucas">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                                </svg>
+                                @Juan.twobrothers
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="barber reveal">
+                        <div class="barber__photo">
+                            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=700&q=80&auto=format&fit=crop"
+                                alt="Barbeiro Diego" loading="lazy">
+                        </div>
+                        <div class="barber__info">
+                            <h3>Richard</h3>
+                            <p>Cortes clássicos & Tesoura</p>
+                            <a href="https://instagram.com/" target="_blank" rel="noopener" class="barber__ig"
+                                aria-label="Instagram do Diego">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                                </svg>
+                                @richard.barber
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="barber reveal">
+                        <div class="barber__photo">
+                            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=700&q=80&auto=format&fit=crop"
+                                alt="Barbeiro Thiago" loading="lazy">
+                        </div>
+                        <div class="barber__info">
+                            <h3>Kauan</h3>
+                            <p>Pigmentação & Freestyle</p>
+                            <a href="https://instagram.com/" target="_blank" rel="noopener" class="barber__ig"
+                                aria-label="Instagram do Thiago">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                                    <circle cx="12" cy="12" r="4" />
+                                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+                                </svg>
+                                @kauan.fade
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GALERIA ===== -->
+        <section class="section section--alt" id="galeria">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">Portfólio</span>
+                    <h2 class="section__title">Galeria de cortes</h2>
+                    <div class="divider"><span></span></div>
+                </header>
+
+                <div class="gallery" id="gallery">
+                    <figure class="gallery__item"><img
+                            src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80&auto=format"
+                            alt="Degradê com risco" loading="lazy"></figure>
+                    <figure class="gallery__item"><img
+                            src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=80&auto=format"
+                            alt="Ambiente da barbearia" loading="lazy"></figure>
+                    <figure class="gallery__item"><img
+                            src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?w=800&q=80&auto=format"
+                            alt="Acabamento na navalha" loading="lazy"></figure>
+                    <figure class="gallery__item"><img
+                            src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=800&q=80&auto=format"
+                            alt="Barba desenhada" loading="lazy"></figure>
+                    <figure class="gallery__item"><img
+                            src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=800&q=80&auto=format"
+                            alt="Cadeira de barbeiro" loading="lazy"></figure>
+                    <figure class="gallery__item"><img
+                            src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=800&q=80&auto=format"
+                            alt="Corte social" loading="lazy"></figure>
+                    <figure class="gallery__item"><img
+                            src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?w=800&q=80&auto=format"
+                            alt="Máquina de corte" loading="lazy"></figure>
+                    <figure class="gallery__item"><img
+                            src="https://images.unsplash.com/photo-1532710093739-9470acff878f?w=800&q=80&auto=format"
+                            alt="Ferramentas de barbeiro" loading="lazy"></figure>
+                    <figure class="gallery__item"><img
+                            src="https://images.unsplash.com/photo-1634480770498-2e1eb2f0fdd6?w=800&q=80&auto=format"
+                            alt="Corte texturizado" loading="lazy"></figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DIFERENCIAIS ===== -->
+        <section class="section" id="diferenciais">
+            <div class="container">
+                <header class="section__head reveal">
+                    <span class="eyebrow">Diferenciais</span>
+                    <h2 class="section__title">Por que nos escolher</h2>
+                    <div class="divider"><span></span></div>
+                </header>
+
+                <div class="features">
+                    <div class="feature reveal">
+                        <span class="feature__num">01</span>
+                        <h3>Profissionais experientes</h3>
+                        <p>Barbeiros com formação contínua e anos de cadeira. Técnica e atenção em cada detalhe.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <span class="feature__num">02</span>
+                        <h3>Pontualidade</h3>
+                        <p>Seu horário é sagrado. Agendou, foi atendido — sem espera e sem enrolação.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <span class="feature__num">03</span>
+                        <h3>Produtos premium</h3>
+                        <p>Pomadas, óleos e balms de marcas reconhecidas, escolhidos para o seu tipo de cabelo.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <span class="feature__num">04</span>
+                        <h3>Ambiente exclusivo</h3>
+                        <p>Música boa, cerveja gelada, café e um espaço pensado para você relaxar.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <span class="feature__num">05</span>
+                        <h3>Higiene rigorosa</h3>
+                        <p>Ferramentas esterilizadas e material descartável em todos os atendimentos.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <span class="feature__num">06</span>
+                        <h3>Assinatura sem burocracia</h3>
+                        <p>Sem fidelidade. Cancele, pause ou troque de plano quando quiser.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="cta" id="agendar">
+            <div class="container cta__inner reveal">
+                <span class="eyebrow">Sua cadeira está esperando</span>
+                <h2 class="cta__title">Agende seu horário</h2>
+                <p>Escolha o barbeiro, o serviço e o melhor horário. Confirmação na hora pelo WhatsApp.</p>
+                <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Two%20Brothers."
+                    target="_blank" rel="noopener" class="btn btn--gold btn--lg">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                        <path
+                            d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.3c0-.1-.2-.2-.5-.3z" />
+                    </svg>
+                    Agendar pelo WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <img src="assets/logo-two.jpg" alt="Logo Two Brothers" class="brand__logo brand__logo--lg">
+                <p>Barbearia masculina premium.<br>Tradição, estilo e cuidado desde 2019.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Horários</h4>
+                <p>Seg a Sex · 09h às 20h</p>
+                <p>Sábado · 08h às 18h</p>
+                <p>Domingo · Fechado</p>
+            </div>
+            <div class="footer__col">
+                <h4>Contato</h4>
+                <p>R. Cap. Lorival Mey, 84 - Jardim Santana, Hortolândia - SP, 13184-214</p>
+                <p>(00) 00000-0000</p>
+                <p><a href="https://instagram.com/" target="_blank" rel="noopener">@barbeariatwobrothers</a></p>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <span>© <span id="year"></span> Barbearia Two Brothers. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar imagem" hidden>
+        <button class="lightbox__close" id="lbClose" aria-label="Fechar">&times;</button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Anterior">&#8249;</button>
+        <figure class="lightbox__figure">
+            <img id="lbImg" src="" alt="">
+            <figcaption id="lbCaption"></figcaption>
+        </figure>
+        <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Próxima">&#8250;</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
